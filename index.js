@@ -16,8 +16,28 @@ client.on("ready", () =>{
 })
 
 client.on("messageCreate", (message) => {
-    if (message.content == "Copa"){
-        message.reply("Ese we es el Caga fuego")
+    if (message.content.startsWith( "copa")){
+        message.channel.send("El Caga fuego por excelencia, dueño de este condominio")
+    }
+})
+client.on("messageCreate", (message) => {
+    if (message.content.startsWith( "eve")){
+        message.channel.send("La bichota del lugar sin excepciones, se merece unos besotes")
+    }
+})
+client.on("messageCreate", (message) => {
+    if (message.content.startsWith( "navarrete")){
+        message.channel.send("No, no es el de Navarrete Show, ya no la chinguen")
+    }
+})
+client.on("messageCreate", (message) => {
+    if (message.content.startsWith( "gus")){
+        message.channel.send("Veterano de la vida, troll para VALORANT, individuo de gustos 'cultos'")
+    }
+})
+client.on("messageCreate", (message) => {
+    if (message.content.startsWith( "bere")){
+        message.channel.send("Kpop lover, adicta a los fujoshis y la cultura asiatica, que no te engañe su pelo ")
     }
 })
 
